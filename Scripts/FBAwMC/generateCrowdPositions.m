@@ -4,7 +4,7 @@ function [modelIrrev, matchRev, irrev2rev, solution] = generateCrowdPositions(mo
 %                    kcat_f, kcat_b, molwt (if any of the value unknown,
 %                    provide '0')
 %                    kcat units should be '1/s' and mol wt in 'Dalton'
-%  crd_val           crowding coefficient, or fraction of enzymatic mass in overall dry cell weight 
+%  crd_val           Cytoplasmic density 
 %  biomass           name of biomass reaction (to be excluded from enzyme
 %                    capacity flux constraint)
 %  num               number of flux solutions for computation
