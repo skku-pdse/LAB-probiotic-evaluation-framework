@@ -4,8 +4,7 @@ function [modelIrrev,matchRev,rev2irrev,irrev2rev] = convertToIrreversible(model
 %
 %OUTPUTS
 % modelIrrev    Model in irreversible format
-% matchRev      Matching of forward and backward reactions of a reversible
-%               reaction
+% matchRev      Matching of forward and backward reactions of a reversible reaction
 % rev2irrev     Matching from reversible to irreversible reactions
 % irrev2rev     Matching from irreversible to reversible reactions
 %
