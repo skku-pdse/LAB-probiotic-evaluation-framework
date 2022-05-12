@@ -12,6 +12,7 @@
 % Set parameters
 
 num = 5000
+
 biomass = 'biomass'
 
 
