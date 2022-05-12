@@ -12,10 +12,7 @@ function [ProdRate] = PostbioticEvaluationWithDiets(model, C, biomass, num, targ
 %  lb_values         Lower bound values corresponding to ex_rxns
 % 
 % OUTPUT
-% solution,,IntFlux      
-% irrevemodelStruct
-% ,modelIrrev1
-%IntFlux
+% ProdRate           Estimated postbiotic production rate    
 %
 %
 % Lokanand Koduru            10/03/18
