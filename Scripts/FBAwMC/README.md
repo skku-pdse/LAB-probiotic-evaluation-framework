@@ -16,8 +16,8 @@ lpl=load('lpl.mat');<br />
 
 
 ### Set parameters
-num = 5000;<br />
 biomass = 'biomass';<br />
+num = 5000;<br />
 
 
 ### Run FBAwMC for all 6 LAB
