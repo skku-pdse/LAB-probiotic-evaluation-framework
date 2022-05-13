@@ -12,10 +12,12 @@ function [f, v, modelIrrev, Best_Crd_positions, EnzConSamples] = FBAwMC_LAB(mode
 %
 % 
 % OUTPUT
-%  modelIrrev    Model in irreversible format with enzyme constraint added
-%                as pseudo reaction
-%  f             Objective value
-%  v             Reaction rates
+%  modelIrrev             Model in irreversible format with enzyme constraint added
+%                         as pseudo reaction
+%  f                      Objective value
+%  v                      Reaction rates
+%  Best_Crd_positions     Best crowding positions with non-zero growth and lactate production
+%  EnzConSamples          Enzyme crowding coefficients
 %
 %
 % Lokanand Koduru            10/03/18
