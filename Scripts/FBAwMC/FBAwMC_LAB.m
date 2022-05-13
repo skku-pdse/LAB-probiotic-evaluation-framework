@@ -1,11 +1,11 @@
-function [f, v, modelIrrev] = FBAwMC_LAB(model,C,biomass,num)
+function [f, v, modelIrrev, Best_Crd_positions, EnzConSamples] = FBAwMC_LAB(model,C,biomass,num)
 
 % INPUT
 %  model             COBRA model structure with 3 additional vectors of same size as 'rxns':
 %                    kcat_f, kcat_b, molwt (if any of the value unknown,
 %                    provide '0')
 %                    kcat units should be '1/s' and mol wt in 'Dalton'
-%  crd_val           Cytoplasmic density 
+%  crd_val           crowding coefficient, or fraction of enzymatic mass in overall dry cell weight 
 %  biomass           name of biomass reaction (to be excluded from enzyme
 %                    capacity flux constraint)
 %  num               number of flux solutions for computation
@@ -22,7 +22,7 @@ function [f, v, modelIrrev] = FBAwMC_LAB(model,C,biomass,num)
 % Meiyappan Lakshmanan       10/04/18 Generalized the code
 
         %% Generate crowd positions
-        [modelIrrev, matchRev, irrev2rev, solution] = generateCrowdPositions(model,C,biomass,num);
+        [modelIrrev, matchRev, irrev2rev, solution, EnzConSamples] = generateCrowdPositions(model,C,biomass,num);
         
         %% Identify best crowd positions with non-zero growth and lactate production
         NonZero_BiomassCrdInds = find((solution(find(ismember(irrev2rev,find(ismember(model.rxns,biomass)))),:)));
