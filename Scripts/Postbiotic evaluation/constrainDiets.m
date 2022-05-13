@@ -18,7 +18,7 @@ function model_out = constrainDiets(model,ex_rxns,lb_values)
     
     %% Change bounds to constrain diet
     for i=1:1:length(ex_rxns)
-        model_out = changeRxnBounds(model_out,ex_rxns(i),lb_values(i),'l');
+        model_out = changeRxnBounds(model_out,ex_rxns(i),-lb_values(i)/24,'l');
 
     end
     
