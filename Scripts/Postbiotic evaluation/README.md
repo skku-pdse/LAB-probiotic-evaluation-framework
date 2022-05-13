@@ -21,10 +21,12 @@ targetProds = {'lac-L[c]', 'ppa[c]', 'ac[c]', 'diact[c]', 'udpg[c]', 'udpgal[c]'
 
 ### Loop through all 11 VMH diets
 for i=1:1:length(diet_name)<br />
+<br />
     lca_ProdRate(i).lca_ProdRate = PostbioticEvaluationWithDiets(lca, 0.345, biomass, num, targetProds, ex_rxns, lb_values(:,i))
     lfe_ProdRate(i).lfe_ProdRate = PostbioticEvaluationWithDiets(lfe, 0.363, biomass, num, targetProds, ex_rxns, lb_values(:,i))
     lla_ProdRate(i).lla_ProdRate = PostbioticEvaluationWithDiets(lla, 0.436, biomass, num, targetProds, ex_rxns, lb_values(:,i))
     lme_ProdRate(i).lme_ProdRate = PostbioticEvaluationWithDiets(lme, 0.272, biomass, num, targetProds, ex_rxns, lb_values(:,i))
     lsa_ProdRate(i).lsa_ProdRate = PostbioticEvaluationWithDiets(lsa, 0.446, biomass, num, targetProds, ex_rxns, lb_values(:,i))
     lpl_ProdRate(i).lpl_ProdRate = PostbioticEvaluationWithDiets(lpl, 0.31, biomass, num, targetProds, ex_rxns, lb_values(:,i))
-end
+<br />    
+end<br />
