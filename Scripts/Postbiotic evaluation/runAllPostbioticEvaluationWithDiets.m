@@ -1,5 +1,3 @@
-%[ProdRate] = PostbioticEvaluationWithDiets(model, C, biomass, num, targetProds, ex_rxns, lb_values)
-
 % Load 6 LAB models
 lca=load('lca.mat');
 lfe=load('lfe.mat');
