@@ -1,7 +1,7 @@
 # FBAwMC example
 ### Example to run FBAwMC for all 6 LAB to obtain their growth solution and internal flux
 - [f, v, modelIrrev] = FBAwMC_LAB(model,C,biomass,num)
-- C, or Cytoplasmic density values for 6 LABs are provided in "LAB-probiotic-evaluation-framework/Data/Cytoplasmic density values for 6 LAB.csv"
+- C, or Cytoplasmic density values for 6 LABs are provided in "~/Data/Cytoplasmic density values for 6 LAB.csv"
 - Number of flux solutions is set at 5000
 
 
