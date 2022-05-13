@@ -20,8 +20,7 @@ num = 5000;
 % Make cell array consisting list of postbiotics to be evaluated
 targetProds = {'lac-L[c]', 'ppa[c]', 'ac[c]', 'diact[c]', 'udpg[c]', 'udpgal[c]','trp-L[c]','thm[c]', 'nac[c]', 'pydx[c]','btn[c]','fol[c]','pnto-R[c]','ribflv[c]', 'mqn7[c]', 'gthrd[c]', 'inost[c]','peptido[c]','CRB[c]','LTA[c]', 'ile-L[c]','val-L[c]','leu-L[c]','phe-L[c]', '3mba[c]', '2mpa[c]', '4abut[c]', 'ptrc[c]', 'spmd[c]', 'hista[c]', 'nh4[c]', 'indole[c]', 'phenol[c]', 'ch4s[c]'};
 
-
-
+% Loop through all 11 VMH diets
 for i=1:1:length(diet_name)
     
     lca_ProdRate(i).lca_ProdRate = PostbioticEvaluationWithDiets(lca, 0.345, biomass, num, targetProds, ex_rxns, lb_values(:,i))
