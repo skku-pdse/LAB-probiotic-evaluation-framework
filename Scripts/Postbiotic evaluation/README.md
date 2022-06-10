@@ -1,5 +1,9 @@
 # Postbiotics evaluation example
 ### Example to run postbiotics evaluation for all 6 LAB in 11 VMH diets
+- [ProdRate] = PostbioticEvaluationWithDiets(model, C, biomass, num, targetProds, ex_rxns, lb_values)
+- C, or Cytoplasmic density values for 6 LABs are provided in "~/Data/Cytoplasmic density values for 6 LAB.csv"
+- ex_rxns, lb_values are data retrieved after loading "~/Data/VMH diets.mat"
+- Number of flux solutions is set at 5000
 
 ### Load 6 LAB models
 lca=load('lca.mat');<br />
